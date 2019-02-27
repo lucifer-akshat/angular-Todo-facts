@@ -11,13 +11,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { AnimalsComponent } from './animals/animals.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    AnimalsComponent
+    AnimalsComponent,
+    HeaderComponent
   ],
   imports: [
     HttpClientModule,
