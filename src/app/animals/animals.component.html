@@ -1,5 +1,6 @@
-<div class="col" *ngIf="animals">
-  <p class="life-container"  *ngFor = 'let animal of animals;' >
+<div class="notification-count col-md-12">{{ animalLength }}</div>
+<div class="col-md-12" *ngIf="animals">
+  <p class="life-container"  *ngFor = 'let animal of animals;' (click)="removeEntry(animal.id)" >
     {{ animal.body }}
   </p>
 </div>
