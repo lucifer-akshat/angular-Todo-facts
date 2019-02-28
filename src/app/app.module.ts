@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { AnimalsComponent } from './animals/animals.component';
 import { HeaderComponent } from './header/header.component';
+import { FormUseComponent } from './form-use/form-use.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HeaderComponent } from './header/header.component';
     HomeComponent,
     AboutComponent,
     AnimalsComponent,
-    HeaderComponent
+    HeaderComponent,
+    FormUseComponent
   ],
   imports: [
     HttpClientModule,

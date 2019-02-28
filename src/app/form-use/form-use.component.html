@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="col-md-12">
+    <form [formGroup]="profileForm" (ngSubmit) = "onSubmit()">
+      <label>
+        First Name:
+        <input type="text" formControlName ="firstName">
+      </label>
+      <label>
+        Second Name:
+        <input type="text" formControlName ="secondName">
+      </label>
+      <input type="button" value="Submit">
+    </form>
+  </div>
+</div>
