@@ -8,12 +8,13 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 
 export class FormUseComponent implements OnInit {
-  profileForm = new FormGroup({
-    firstName: new FormControl(''),
-    secondName: new FormControl(''),
-  });
+  profileForm:any;
 
   constructor() {
+    this.profileForm = new FormGroup({
+      firstName: new FormControl(''),
+      secondName: new FormControl(''),
+    });
   }
 
   ngOnInit() {
