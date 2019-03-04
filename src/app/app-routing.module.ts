@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from "./home/home.component";
 import { AboutComponent } from "./about/about.component";
 import {AnimalsComponent} from './animals/animals.component';
+import { FormUseComponent } from './form-use/form-use.component';
 
 const routes: Routes = [
 
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'randomText',
     component: AnimalsComponent
+  },
+  {
+    path: 'sampleform',
+    component: FormUseComponent
   }
 
 ];

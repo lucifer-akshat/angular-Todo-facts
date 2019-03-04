@@ -8,24 +8,19 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 
 export class FormUseComponent implements OnInit {
-  profileForm:any;
+  profileForm = new FormGroup({
+    firstName: new FormControl(''),
+    secondName: new FormControl(''),
+  });
 
   constructor() {
-    this.profileForm = new FormGroup({
-      firstName: new FormControl(''),
-      secondName: new FormControl(''),
-    });
   }
 
   ngOnInit() {
-    // this.profileForm = new FormGroup({
-    //   firstName: new FormControl(''),
-    //   secondName: new FormControl(''),
-    // })
   }
 
-  onSubmit() {
-    console.log(this.profileForm, 'profileFormData');
+  onSubmit(data) {
+    console.log(this.profileForm.value, 'profileFormData');
   }
 
 }

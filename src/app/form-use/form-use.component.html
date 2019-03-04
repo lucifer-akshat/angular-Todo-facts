@@ -1,15 +1,15 @@
 <div class="container">
   <div class="col-md-12">
-    <form [formGroup]="profileForm" (ngSubmit) = "onSubmit()">
+    <form [formGroup]="profileForm" (ngSubmit) = "onSubmit(profileForm)">
       <label>
         First Name:
-        <input type="text" formControlName ="firstName">
+        <input type="text" formControlName ="firstName" style="color:black;">
       </label>
       <label>
         Second Name:
-        <input type="text" formControlName ="secondName">
+        <input type="text" formControlName ="secondName" style="color:black;" required>
       </label>
-      <input type="button" value="Submit">
+      <button type="submit" [disabled]="!profileForm.valid">Submit</button>
     </form>
   </div>
 </div>
