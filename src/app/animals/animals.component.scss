@@ -37,3 +37,18 @@ input.btn {
   font-weight: bold;
   cursor: pointer;
 }
+
+.notification-count{
+  text-align:right;
+  background-color: #3FA0E1;
+  height:50px;
+  width:50px;
+  border:1px solid aliceblue;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  padding-top: 12px;
+  padding-left: 12px;
+  left:97%;
+  margin-bottom:20px;
+}

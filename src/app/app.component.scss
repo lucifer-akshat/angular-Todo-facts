@@ -1,0 +1,113 @@
+
+@keyframes bubbles {
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-105vh);
+  }
+}
+
+.bubble-1 {
+  width: 10px;
+  height: 10px;
+  border: 1px solid aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0px;
+  left: 60%;
+  animation: bubbles 15s linear infinite;
+}
+.bubble-2 {
+  width: 25px;
+  height: 25px;
+  border: 1px solid aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0px;
+  left: 10%;
+  animation: bubbles 25s linear infinite;
+}
+.bubble-3 {
+  width: 10px;
+  height: 10px;
+  border: 1px solid aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0px;
+  left: 30%;
+  animation: bubbles 15s linear infinite;
+}
+.bubble-4 {
+  z-index: 2;
+  width: 10px;
+  height: 10px;
+  border: 1px solid aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  animation: bubbles 10s linear infinite;
+}
+.bubble-5 {
+  width: 15px;
+  height: 15px;
+  border: 1px solid aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0px;
+  left: 70%;
+  animation: bubbles 15s linear infinite;
+  z-index: 2;
+}
+.bubble-6 {
+  width: 20px;
+  height: 20px;
+  border: 1px solid aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0px;
+  left: 20%;
+  animation: bubbles 30s linear infinite;
+}
+.bubble-7 {
+  width: 25px;
+  height: 25px;
+  border: 1px solid aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0px;
+  left: 35%;
+  animation: bubbles 25s linear infinite;
+}
+.bubble-8 {
+  width: 20px;
+  height: 20px;
+  border: 1px solid aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0px;
+  left: 85%;
+  animation: bubbles 15s linear infinite;
+}
+.bubble-9 {
+  width: 20px;
+  height: 20px;
+  border: 1px solid aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0px;
+  left: 40%;
+  animation: bubbles 20s linear infinite;
+}
+.bubble-10 {
+  width: 20px;
+  height: 20px;
+  border: 1px solid aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0px;
+  left: 90%;
+  animation: bubbles 25s linear infinite;
+}
+

@@ -1,14 +1,11 @@
-.container {
-  display: grid;
-  grid-template-columns: 50% auto;
-}
-
 .col {
   padding: .4em 1.3em;
 }
 
 .color-dark {
   background: #2885C4;
+  padiing:5px,5px 5px 5px;
+  margin-bottom: 10px;
 }
 
 .color-light {

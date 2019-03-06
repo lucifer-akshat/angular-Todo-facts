@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { RouteConfigService } from "../routeConfig.service";
 import { trigger,style,transition,animate,keyframes,query,stagger } from '@angular/animations';
 
@@ -48,6 +48,7 @@ import { trigger,style,transition,animate,keyframes,query,stagger } from '@angul
 })
 export class AnimalsComponent implements OnInit {
   animals: any;
+  @Input() animalLength: number = 0;
   constructor(private _configData: RouteConfigService) {
 
   }
@@ -60,7 +61,20 @@ export class AnimalsComponent implements OnInit {
     this._configData.getConfig()
       .subscribe(resp =>  {
         this.animals = resp;
+        this.animalLength = this.animals.length;
       });
+  }
+
+  removeEntry(id) {
+    for(let i=0; this.animals.length>i; i++) {
+      if(this.animals[i].id === id) {
+        this.animals.splice(i, 1);
+        this.animalLength = this.animals.length;
+      } else {
+        return;
+      }
+
+    }
   }
 
 }
